@@ -1,0 +1,113 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0120;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background: #12032e;
+}
+
+.navbar a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #a855f7;
+}
+
+/* Section */
+.project {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Heading */
+.project h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+/* Intro text */
+.project p {
+  max-width: 700px;
+  margin: 10px auto;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+/* Project Grid */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Cards */
+.project-card {
+  background: linear-gradient(135deg, #1e0a3c, #2a0f4f);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.6);
+}
+
+/* Card Title */
+.project-card h3 {
+  color: #a855f7;
+  margin-bottom: 10px;
+}
+
+/* Card Text */
+.project-card p {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project h1 {
+    font-size: 1.6rem;
+  }
+
+  .project p {
+    font-size: 0.9rem;
+  }
+}
